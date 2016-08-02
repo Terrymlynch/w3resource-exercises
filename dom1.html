@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html><br><head>  
+<meta charset=utf-8 />  
+<title>JS DOM paragraph style</title>  
+</head>   
+<body>  
+<script>
+    function js_style() {
+        var x = document.getElementById("text");
+        x.style.color="blue";
+        x.style.fontFamily="verdana";  // Why not 'font-family'?
+        x.style.fontSize="200%";   // Why not 'font-size'?
+    }
+</script>
+<p id ='text'>JavaScript Exercises - w3resource</p>   
+<div>  
+<button id="jsstyle"  
+onclick="js_style()">Style</button>  
+</div>  
+</body>  
+</html> 
