@@ -1,0 +1,29 @@
+<html>
+<title>Area of Triangle</title>
+
+<body>
+<script>
+    var sideA = 5;
+    var sideB = 6;
+    var sideC = 7;
+    
+    /*  The math below is all an implementation of Heron's 
+formula.  It is step by step without functions. I had problems plugging 
+var s into the formula. It works below, but if I tried too much in one
+step, then I would get a console error that "s is not a function".
+    */
+    var s = (sideA + sideB + sideC)/2;  // Get half the perimeter.
+
+    // Get (s(s-a)(s-b)(s-c)).
+    var a = (s - sideA); // (s-a) for above formula.
+    var b = (s - sideB); // (s-b) for above formula.
+    var c = (s - sideC);  // (s-c) for above formula.
+
+    var x = s * a * b * c; // Get result of line 17 formula.
+
+    var area = Math.sqrt(x);  // Take square root
+    console.log(area);
+</script>
+
+</body>
+</html>

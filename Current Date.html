@@ -1,0 +1,22 @@
+<html>
+<title>Current Date</title>
+<body>
+    <div id="demo"></div>
+<script>
+ 
+    var m = new Date().getMonth();
+    var d = new Date().getDate();   // Note, getDay() gives day of week.
+    var y = new Date().getFullYear();  // Note, getYear() is deprecated.
+
+/*  Alternate way to create the above variables.
+    var x = new Date();
+    var m = x.getMonth();
+    var d = x.getDate();
+    var y = x.getFullYear(); */
+
+    document.getElementById("demo").innerHTML = y + "-" + m + "-" + d;
+</script>
+
+</body>
+
+</html>
