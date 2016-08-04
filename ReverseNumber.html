@@ -1,0 +1,18 @@
+<html>
+<title>Reverse a number</title>
+<body>
+<script>
+ function reverse(n) {
+     n = n+''; // converts 'n' to a string.
+      
+     return n.split("").reverse().join("");  // split("") splits n into an array of substrings.
+                                    // .reverse() takes the array elements and reverses them.
+                                    // .join("") joins the array elements back into a string.
+ }
+ console.log(reverse(12345));
+</script>
+
+
+
+</body>
+</html>
